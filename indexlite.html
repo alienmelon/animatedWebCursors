@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>This is a demo of the animated cursors lite version (no cursors come with this, you must make your own)...</title>
+
+<script src="animatedWebCursorLite.js"></script>
+
+<style>
+	
+	body{
+		background-color: lightgrey;
+		/*background-image: url("images/IMG_BACKGROUND_STARFIELD.gif");*/
+		color: black;
+		font-family:'Roboto',sans-serif;
+	}
+	
+	a{
+		color:darkblue;
+	}
+	
+	.imageButton{
+		background-color: white;
+		padding: 28px;
+		margin: 15px;
+		border: 0.16em solid rgba(255,255,255,0);
+		border-radius: 2em;
+		box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	}
+
+
+</style>
+	
+</head>
+
+<body>
+	<h1>An example of the lite version...</h1>
+	
+<div>
+	<br><br>
+	No default cursor functions come with this...
+	<br><br>
+	
+	You must add what you want by calling either...
+	<br><br>
+	
+	<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">animateCursor(arr_animation);
+<span style="color: #888888">//or</span>
+animateCursorForElement(arr_animation, str_tagName);
+	</pre></div>
+	<br><br>
+	
+	...and passing your own values.
+	<br><br>
+	
+	To start, you must first add the script to your html page by copy and pasting the following beneath your <strong>head tag</strong>
+	<br><br>
+	
+	<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;script </span><span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;animatedWebCursorsLite.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+	</pre></div>
+	<br><br>
+	
+		<ol>
+			<li>Everything must be nested in an array, so the format of (['path1.png', 'path2.png' ... ]); is important.</li>
+			<li>Cursors <strong>should not</strong> be larger than 32 x 32.</li>
+			<li>Customize the <strong>window.addEventListener("load",function()</strong> listener in the <strong>animatedWebCursorLite.js</strong> file to add your cursors. For example...</li>
+			<li>This uses the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Basic_User_Interface/Using_URL_values_for_the_cursor_property" target="_blank">CSS cursor property</a>, so the same rules apply. You can use PNG, GIF, JPG, BMP, CUR, etc. images.</li>
+		</ol>
+		<br><br>
+		
+		<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">//---------------ON PAGE LOAD, CUSTOMIZE THIS...---------------//</span>
+
+<span style="color: #888888">//customize this with your desired functions</span>
+<span style="color: #888888">//this starts the cursor when the page loads...</span>
+<span style="color: #888888">//if you want to have the cursor start another way, then comment this out</span>
+<span style="color: #007020">window</span>.addEventListener(<span style="background-color: #fff0f0">&quot;load&quot;</span>,<span style="color: #008800; font-weight: bold">function</span>(){
+	
+	<span style="color: #888888">//make a theme here!</span>
+	<span style="color: #888888">//see https://www.w3schools.com/tags/ for a list of all elements</span>
+	
+	<span style="color: #888888">//note that everything must be passed as an array, so the brakets [&#39;...&#39;] are important.</span>
+	
+	animateCursor([<span style="background-color: #fff0f0">&#39;Custom/kitty/kitty1-frame1.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/kitty/kitty1-frame2.png&#39;</span>]);
+	
+	<span style="color: #888888">//example of a custom animation set to a list tag...</span>
+	animateCursorForElement([<span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame1.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame2.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame3.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame4.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame5.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame6.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame7.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame8.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame9.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame10.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame11.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame12.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame13.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame14.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame15.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame16.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame17.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame18.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame19.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/sparkle/CursorStarSparkle-frame20.png&#39;</span>], <span style="background-color: #fff0f0">&quot;li&quot;</span>);
+	<span style="color: #888888">//example of a custom animation set to the bold tag...</span>
+	animateCursorForElement([<span style="background-color: #fff0f0">&#39;Custom/cupcakecursor/cupcakecursor_frame1.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/cupcakecursor/cupcakecursor_frame2.png&#39;</span>, <span style="background-color: #fff0f0">&#39;Custom/cupcakecursor/cupcakecursor_frame3.png&#39;</span>], <span style="background-color: #fff0f0">&quot;strong&quot;</span>);
+});
+		</pre></div>
+		
+	
+	<br><br>
+	<br><br>
+	<br><br>
+	
+</div>
+	
+</body>
+</html>

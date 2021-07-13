@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customizable animated cursor pointers for the web.</title>
+
+<script src="animatedWebCursors.js"></script>
+
+<style>
+	
+	body{
+		background-color: lightgrey;
+		/*background-image: url("images/IMG_BACKGROUND_STARFIELD.gif");*/
+		color: black;
+		font-family:'Roboto',sans-serif;
+	}
+	
+	a{
+		color:darkblue;
+	}
+	
+	.imageButton{
+		background-color: white;
+		padding: 28px;
+		margin: 15px;
+		border: 0.16em solid rgba(255,255,255,0);
+		border-radius: 2em;
+		box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	}
+
+
+</style>
+	
+</head>
+
+<body>
+	<img src="images/appstar2ani.gif" alt="" class="imageButton" onclick="appstar2ani();">
+	<img src="images/appstar3ani.gif" alt="" class="imageButton" onclick="appstar3ani();">
+	<img src="images/appstartani.gif" alt="" class="imageButton" onclick="appstartani();">
+	<img src="images/bananaani.gif" alt="" class="imageButton" onclick="bananaani();">
+	<img src="images/barberani.gif" alt="" class="imageButton" onclick="barberani();">
+	<img src="images/coinani.gif" alt="" class="imageButton" onclick="coinani();">
+	<img src="images/counterani.gif" alt="" class="imageButton" onclick="counterani();">
+	<img src="images/dinosau2ani.gif" alt="" class="imageButton" onclick="dinosau2ani();">
+	<img src="images/dinosaurani.gif" alt="" class="imageButton" onclick="dinosaurani();">
+	<img src="images/drumani.gif" alt="" class="imageButton" onclick="drumani();">
+	<img src="images/fillitupani.gif" alt="" class="imageButton" onclick="fillitupani();">
+	<img src="images/handani.gif" alt="" class="imageButton" onclick="handani();">
+	<img src="images/handapstani.gif" alt="" class="imageButton" onclick="handapstani();">
+	<img src="images/handneswani.gif" alt="" class="imageButton" onclick="handneswani();">
+	<img src="images/handnoani.gif" alt="" class="imageButton" onclick="handnoani();">
+	<img src="images/handnsani.gif" alt="" class="imageButton" onclick="handnsani();">
+	<img src="images/handnwseani.gif" alt="" class="imageButton" onclick="handnwseani();">
+	<img src="images/handwaitani.gif" alt="" class="imageButton" onclick="handwaitani();">
+	<img src="images/handweani.gif" alt="" class="imageButton" onclick="handweani();">
+	<img src="images/horseani.gif" alt="" class="imageButton" onclick="horseani();">
+	<img src="images/hourgla2ani.gif" alt="" class="imageButton" onclick="hourgla2ani();">
+	<img src="images/hourgla3ani.gif" alt="" class="imageButton" onclick="hourgla3ani();">
+	<img src="images/hourglasani.gif" alt="" class="imageButton" onclick="hourglasani();">
+	<img src="images/metronomani.gif" alt="" class="imageButton" onclick="metronomani();">
+	<img src="images/pianoani.gif" alt="" class="imageButton" onclick="pianoani();">
+	<img src="images/raindropani.gif" alt="" class="imageButton" onclick="raindropani();">
+	<img src="images/sizeneswani.gif" alt="" class="imageButton" onclick="sizeneswani();">
+	<img src="images/sizensani.gif" alt="" class="imageButton" onclick="sizensani();">
+	<img src="images/sizenwseani.gif" alt="" class="imageButton" onclick="sizenwseani();">
+	<img src="images/sizeweani.gif" alt="" class="imageButton" onclick="sizeweani();">
+	<img src="images/wagtailani.gif" alt="" class="imageButton" onclick="wagtailani();">
+	
+	<img src="images/3dgarrocur.png" alt="" class="imageButton" onclick="_3dgarrocur();">
+	<img src="images/3dgmovecur.png" alt="" class="imageButton" onclick="_3dgmovecur();">
+	<img src="images/3dgneswcur.png" alt="" class="imageButton" onclick="_3dgneswcur();">
+	<img src="images/3dgnocur.png" alt="" class="imageButton" onclick="_3dgnocur();";>
+	<img src="images/3dgnscur.png" alt="" class="imageButton" onclick="_3dgnscur();";>
+	<img src="images/3dgnwsecur.png" alt="" class="imageButton" onclick="_3dgnwsecur();";>
+	<img src="images/3dgwecur.png" alt="" class="imageButton" onclick="_3dgwecur();";>
+	<img src="images/3dsmovecur.png" alt="" class="imageButton" onclick="_3dsmovecur();";>
+	<img src="images/3dsnwsecur.png" alt="" class="imageButton" onclick="_3dsnwsecur();";>
+	<img src="images/3dwarrocur.png" alt="" class="imageButton" onclick="_3dwarrocur();";>
+	<img src="images/3dwmovecur.png" alt="" class="imageButton" onclick="_3dwmovecur();";>
+	<img src="images/3dwneswcur.png" alt="" class="imageButton" onclick="_3dwneswcur(); ";>
+	<img src="images/3dwnocur.png" alt="" class="imageButton" onclick="_3dwnocur();";>
+	<img src="images/3dwnscur.png" alt="" class="imageButton" onclick="_3dwnscur();";>
+	<img src="images/3dwnwsecur.png" alt="" class="imageButton" onclick="_3dwnwsecur();";>
+	<img src="images/3dwwecur.png" alt="" class="imageButton" onclick="_3dwwecur();";>
+	<img src="images/AlternateSelect.png" alt="" class="imageButton" onclick="_classicAlternateSelectcur();";>
+	<img src="images/Handwriting.png" alt="" class="imageButton" onclick="_classicHandwritingcur();";>
+	<img src="images/harrowcur.png" alt="" class="imageButton" onclick="_harrowcur();";>
+	<img src="images/hcrosscur.png" alt="" class="imageButton" onclick="_hcrosscur();";>
+	<img src="images/HelpSelect.png" alt="" class="imageButton" onclick="_classicHelpSelectcur();";>
+	<img src="images/hibeamcur.png" alt="" class="imageButton" onclick="_hibeamcur();";>
+	<img src="images/hmovecur.png" alt="" class="imageButton" onclick="_hmovecur();";>
+	<img src="images/hneswcur.png" alt="" class="imageButton" onclick="_hneswcur();";>
+	<img src="images/hnodropcur.png" alt="" class="imageButton" onclick="_hnodropcur();";>
+	<img src="images/hnscur.png" alt="" class="imageButton" onclick="_hnscur();";>
+	<img src="images/hnwsecur.png" alt="" class="imageButton" onclick="_hnwsecur();";>
+	<img src="images/hwecur.png" alt="" class="imageButton" onclick="_hwecur();";>
+	<img src="images/LinkSelect.png" alt="" class="imageButton" onclick="_classicLinkSelectcur();";>
+	<img src="images/PrecisionSelect.png" alt="" class="imageButton" onclick="_classicPrecisionSelectcur();";>
+	<img src="images/TextSelect.png" alt="" class="imageButton" onclick="_classicTextSelectcur();";>
+	
+	<img src="images/MagnifiedBusy.png" alt="" class="imageButton" onclick="_magnifiedBusycur();">
+	<img src="images/MagnifiedDiagonalResize1.png" alt="" class="imageButton" onclick="_magnifiedDiagonalResize1cur();">
+	<img src="images/MagnifiedDiagonalResize2.png" alt="" class="imageButton" onclick="_magnifiedDiagonalResize2cur();">
+	<img src="images/MagnifiedHorizontalResize.png" alt="" class="imageButton" onclick="_magnifiedHorizontalResizecur();">
+	<img src="images/MagnifiedMove.png" alt="" class="imageButton" onclick="_magnifiedMovecur();">
+	<img src="images/MagnifiedNormalSelect.png" alt="" class="imageButton" onclick="_magnifiedNormalSelectcur();">
+	<img src="images/MagnifiedPrecisionSelect.png" alt="" class="imageButton" onclick="_magnifiedPrecisionSelectcur();">
+	<img src="images/MagnifiedTextSelect.png" alt="" class="imageButton" onclick="_magnifiedTextSelectcur();">
+	<img src="images/MagnifiedUnavailable.png" alt="" class="imageButton" onclick="_magnifiedUnavailablecur();">
+	<img src="images/MagnifiedVerticalResize.png" alt="" class="imageButton" onclick="_magnifiedVerticalResizecur();">
+	<img src="images/MagnifiedWorkingInBackground.png" alt="" class="imageButton" onclick="_magnifiedWorkingInBackgroundcur();">
+	
+	<img src="images/WindowsBlackExtraLargeAlternateSelect.png" alt="" class="imageButton" onclick="_windowsBlackXLAlternateSelectcur();">
+	<img src="images/WindowsBlackExtraLargeBusy.png" alt="" class="imageButton" onclick="_windowsBlackXLBusycur();">
+	<img src="images/WindowsBlackExtraLargeDiagonalResize1.png" alt="" class="imageButton" onclick="_windowsBlackXLDiagonalResize1cur();">
+	<img src="images/WindowsBlackExtraLargeDiagonalResize2.png" alt="" class="imageButton" onclick="_windowsBlackXLDiagonalResize2cur();">
+	<img src="images/WindowsBlackExtraLargeHelpSelect.png" alt="" class="imageButton" onclick="_windowsBlackXLHelpSelectcur();">
+	<img src="images/WindowsBlackExtraLargeHorizontalResize.png" alt="" class="imageButton" onclick="_windowsBlackXLHorizontalResizecur();">
+	<img src="images/WindowsBlackExtraLargeMove.png" alt="" class="imageButton" onclick="_windowsBlackXLMovecur();">
+	<img src="images/WindowsBlackExtraLargeNormalSelect.png" alt="" class="imageButton" onclick="_windowsBlackXLNormalSelectcur();">
+	<img src="images/WindowsBlackExtraLargePrecisionSelect.png" alt="" class="imageButton" onclick="_windowsBlackXLPrecisionSelectcur();">
+	<img src="images/WindowsBlackExtraLargeTextSelect.png" alt="" class="imageButton" onclick="_windowsBlackXLTextSelectcur();">
+	<img src="images/WindowsBlackExtraLargeUnavailable.png" alt="" class="imageButton" onclick="_windowsBlackXLUnavailablecur();">
+	<img src="images/WindowsBlackExtraLargeVerticalResize.png" alt="" class="imageButton" onclick="_windowsBlackXLVerticalResizecur();">
+	<img src="images/WindowsBlackExtraLargeWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsBlackXLWorkingInBackgroundcur();">
+
+	<img src="images/WindowsBlackLargeAlternateSelect.png" alt="" class="imageButton" onclick="_windowsBlackLAlternateSelectcur();">
+	<img src="images/WindowsBlackLargeBusy.png" alt="" class="imageButton" onclick="_windowsBlackLBusycur();">
+	<img src="images/WindowsBlackLargeDiagonalResize1.png" alt="" class="imageButton" onclick="_windowsBlackLDiagonalResize1cur();">
+	<img src="images/WindowsBlackLargeDiagonalResize2.png" alt="" class="imageButton" onclick="_windowsBlackLDiagonalResize2cur();">
+	<img src="images/WindowsBlackLargeHelpSelect.png" alt="" class="imageButton" onclick="_windowsBlackLHelpSelectcur();">
+	<img src="images/WindowsBlackLargeMove.png" alt="" class="imageButton" onclick="_windowsBlackLMovecur();">
+	<img src="images/WindowsBlackLargeNormalSelect.png" alt="" class="imageButton" onclick="_windowsBlackLNormalSelectcur();">
+	<img src="images/WindowsBlackLargePrecisionSelect.png" alt="" class="imageButton" onclick="_windowsBlackLPrecisionSelectcur();">
+	<img src="images/WindowsBlackLargeTextSelect.png" alt="" class="imageButton" onclick="_windowsBlackLTextSelectcur();">
+	<img src="images/WindowsBlackLargeUnavailable.png" alt="" class="imageButton" onclick="_windowsBlackLUnavailablecur();">
+	<img src="images/WindowsBlackLargeVerticalResize.png" alt="" class="imageButton" onclick="_windowsBlackLVerticalResizecur();">
+	<img src="images/WindowsBlackLargeWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsBlackLWorkingInBackgroundcur();">
+	
+	<img src="images/WindowsBlackBusy.png" alt="" class="imageButton" onclick="_windowsBlackBusycur();">
+	<img src="images/WindowsBlackDiagonalResize1.png" alt="" class="imageButton" onclick="_windowsBlackDiagonalResize1cur();">
+	<img src="images/WindowsBlackDiagonalResize2.png" alt="" class="imageButton" onclick="_windowsBlackDiagonalResize2cur();">
+	<img src="images/WindowsBlackHelpSelect.png" alt="" class="imageButton" onclick="_windowsBlackHelpSelectcur();">
+	<img src="images/WindowsBlackHorizontalResize.png" alt="" class="imageButton" onclick="_windowsBlackHorizontalResizecur();">
+	<img src="images/WindowsBlackNormalSelect.png" alt="" class="imageButton" onclick="_windowsBlackNormalSelectcur();">
+	<img src="images/WindowsBlackUnavailable.png" alt="" class="imageButton" onclick="_windowsBlackUnavailablecur();">
+	<img src="images/WindowsBlackVerticalResize.png" alt="" class="imageButton" onclick="_windowsBlackVerticalResizecur();">
+	<img src="images/WindowsBlackWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsBlackWorkingInBackgroundcur();">
+	
+	<img src="images/WindowsDefaultBusy.png" alt="" class="imageButton" onclick="_windowsDefaultBusycur();">
+	<img src="images/WindowsDefaultHelpSelect.png" alt="" class="imageButton" onclick="_windowsDefaultHelpSelectcur();">
+	<img src="images/WindowsDefaultNormalSelect.png" alt="" class="imageButton" onclick="_windowsDefaultNormalSelectcur();">
+	<img src="images/WindowsDefaultWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsDefaultWorkingInBackgroundcur();">
+	
+	<img src="images/WindowsStandardExtraLargeAlternateSelect.png" alt="" class="imageButton" onclick="_windowsStandardXLAlternateSelectcur();">
+	<img src="images/WindowsStandardExtraLargeBusy.png" alt="" class="imageButton" onclick="_windowsStandardXLBusycur();">
+	<img src="images/WindowsStandardExtraLargeDiagonalResize1.png" alt="" class="imageButton" onclick="_windowsStandardXLDiagonalResize1cur();">
+	<img src="images/WindowsStandardExtraLargeDiagonalResize2.png" alt="" class="imageButton" onclick="_windowsStandardXLDiagonalResize2cur();">
+	<img src="images/WindowsStandardExtraLargeHelpSelect.png" alt="" class="imageButton" onclick="_windowsStandardXLHelpSelectcur();">
+	<img src="images/WindowsStandardExtraLargeHorizontalResize.png" alt="" class="imageButton" onclick="_windowsStandardXLHorizontalResizecur();">
+	<img src="images/WindowsStandardExtraLargeMove.png" alt="" class="imageButton" onclick="_windowsStandardXLMovecur();">
+	<img src="images/WindowsStandardExtraLargeNormalSelect.png" alt="" class="imageButton" onclick="_windowsStandardXLNormalSelectcur();">
+	<img src="images/WindowsStandardExtraLargePrecisionSelect.png" alt="" class="imageButton" onclick="_windowsStandardXLPrecisionSelectcur();">
+	<img src="images/WindowsStandardExtraLargeTextSelect.png" alt="" class="imageButton" onclick="_windowsStandardXLTextSelectcur();">
+	<img src="images/WindowsStandardExtraLargeUnavailable.png" alt="" class="imageButton" onclick="_windowsStandardXLUnavailablecur();">
+	<img src="images/WindowsStandardExtraLargeVerticalResize.png" alt="" class="imageButton" onclick="_windowsStandardXLVerticalResizecur();">
+	<img src="images/WindowsStandardExtraLargeWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsStandardXLWorkingInBackgroundcur();">
+	
+	<img src="images/WindowsStandardLargeAlternateSelect.png" alt="" class="imageButton" onclick="_windowsStandardLAlternateSelectcur();">
+	<img src="images/WindowsStandardLargeBusy.png" alt="" class="imageButton" onclick="_windowsStandardLBusycur();">
+	<img src="images/WindowsStandardLargeDiagonalResize1.png" alt="" class="imageButton" onclick="_windowsStandardLDiagonalResize1cur();">
+	<img src="images/WindowsStandardLargeDiagonalResize2.png" alt="" class="imageButton" onclick="_windowsStandardLDiagonalResize2cur();">
+	<img src="images/WindowsStandardLargeHelpSelect.png" alt="" class="imageButton" onclick="_windowsStandardLHelpSelectcur();">
+	<img src="images/WindowsStandardLargeMove.png" alt="" class="imageButton" onclick="_windowsStandardLMovecur();">
+	<img src="images/WindowsStandardLargeNormalSelect.png" alt="" class="imageButton" onclick="_windowsStandardLNormalSelectcur();">
+	<img src="images/WindowsStandardLargePrecisionSelect.png" alt="" class="imageButton" onclick="_windowsStandardLPrecisionSelectcur();">
+	<img src="images/WindowsStandardLargeTextSelect.png" alt="" class="imageButton" onclick="_windowsStandardLTextSelectcur();">
+	<img src="images/WindowsStandardLargeUnavailable.png" alt="" class="imageButton" onclick="_windowsStandardLUnavailablecur();">
+	<img src="images/WindowsStandardLargeVerticalResize.png" alt="" class="imageButton" onclick="_windowsStandardLVerticalResizecur();">
+	<img src="images/WindowsStandardLargeWorkingInBackground.png" alt="" class="imageButton" onclick="_windowsStandardLWorkingInBackgroundcur();">
+
+	<img src="images/customdemo/snoopy04b.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/snoopy-frame1.png', 'Custom/snoopy-frame2.png']);">
+	<img src="images/customdemo/kitty1.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/kitty/kitty1-frame1.png', 'Custom/kitty/kitty1-frame2.png']);">
+	<img src="images/customdemo/partygirl.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/partygirl/partygirl-frame1.png', 'Custom/partygirl/partygirl-frame2.png', 'Custom/partygirl/partygirl-frame3.png', 'Custom/partygirl/partygirl-frame4.png', 'Custom/partygirl/partygirl-frame5.png', 'Custom/partygirl/partygirl-frame6.png', 'Custom/partygirl/partygirl-frame7.png', 'Custom/partygirl/partygirl-frame8.png', 'Custom/partygirl/partygirl-frame9.png', 'Custom/partygirl/partygirl-frame10.png', 'Custom/partygirl/partygirl-frame11.png', 'Custom/partygirl/partygirl-frame12.png']);">
+	<img src="images/customdemo/flyingheart.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/flyingheart/flyingheart-frame1.png', 'Custom/flyingheart/flyingheart-frame2.png', 'Custom/flyingheart/flyingheart-frame3.png', 'Custom/flyingheart/flyingheart-frame4.png', 'Custom/flyingheart/flyingheart-frame5.png', 'Custom/flyingheart/flyingheart-frame6.png', 'Custom/flyingheart/flyingheart-frame7.png'])">
+	<img src="images/customdemo/hkanicursor.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/kitty/hkanicursor-frame1.png', 'Custom/kitty/hkanicursor-frame2.png', 'Custom/kitty/hkanicursor-frame3.png', 'Custom/kitty/hkanicursor-frame4.png']);">
+	<img src="images/customdemo/CursorStarSparkle.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/sparkle/CursorStarSparkle-frame1.png', 'Custom/sparkle/CursorStarSparkle-frame2.png', 'Custom/sparkle/CursorStarSparkle-frame3.png', 'Custom/sparkle/CursorStarSparkle-frame4.png', 'Custom/sparkle/CursorStarSparkle-frame5.png', 'Custom/sparkle/CursorStarSparkle-frame6.png', 'Custom/sparkle/CursorStarSparkle-frame7.png', 'Custom/sparkle/CursorStarSparkle-frame8.png', 'Custom/sparkle/CursorStarSparkle-frame9.png', 'Custom/sparkle/CursorStarSparkle-frame10.png', 'Custom/sparkle/CursorStarSparkle-frame11.png', 'Custom/sparkle/CursorStarSparkle-frame12.png', 'Custom/sparkle/CursorStarSparkle-frame13.png', 'Custom/sparkle/CursorStarSparkle-frame14.png', 'Custom/sparkle/CursorStarSparkle-frame15.png', 'Custom/sparkle/CursorStarSparkle-frame16.png', 'Custom/sparkle/CursorStarSparkle-frame17.png', 'Custom/sparkle/CursorStarSparkle-frame18.png', 'Custom/sparkle/CursorStarSparkle-frame19.png', 'Custom/sparkle/CursorStarSparkle-frame20.png']);">
+	<img src="images/customdemo/doomskullcursor.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/doomskull-frame1.png', 'Custom/doomskull-frame2.png'])">
+	<img src="images/customdemo/DragonflyCMcursor.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/DragonflyCMcursor/DragonflyCMcursor_frame1.png','Custom/DragonflyCMcursor/DragonflyCMcursor_frame2.png','Custom/DragonflyCMcursor/DragonflyCMcursor_frame3.png','Custom/DragonflyCMcursor/DragonflyCMcursor_frame4.png']);">
+	<img src="images/customdemo/cursor2-1.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/sparkle/cursor2-1_frame1.png', 'Custom/sparkle/cursor2-1_frame2.png']);">
+	<img src="images/customdemo/cursor8.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/sparkle/cursor8-frame1.png', 'Custom/sparkle/cursor8-frame2.png']);">
+	<img src="images/customdemo/cursor-1.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/cursor-1_frame1.png', 'Custom/cursor-1_frame2.png', 'Custom/cursor-1_frame3.png', 'Custom/cursor-1_frame4.png']);">
+	<img src="images/customdemo/cursor1.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/sparkle/cursor1_frame1.png', 'Custom/sparkle/cursor1_frame2.png']);">
+	<img src="images/customdemo/cursor_cutepronto2.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/cursor_cutepronto2_frame1.png', 'Custom/cursor_cutepronto2_frame2.png']);">
+	<img src="images/customdemo/cupcakecursor2.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/cupcakecursor/cupcakecursor_frame1.png', 'Custom/cupcakecursor/cupcakecursor_frame2.png', 'Custom/cupcakecursor/cupcakecursor_frame3.png']);">
+	<img src="images/customdemo/c035a.gif" alt="" class="imageButton" onclick="animateCursor(['Custom/c035a_frame1.png', 'Custom/c035a_frame2.png', 'Custom/c035a_frame3.png', 'Custom/c035a_frame4.png']);">
+	
+</div>
+	
+</body>
+</html>
