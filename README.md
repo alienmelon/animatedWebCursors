@@ -24,7 +24,7 @@ Since this uses the CSS's cursor: property the same rules apply.
 * Cursors should *NOT be larger than 32 x 32 pixels* in size, to stay supported across all browsers.
 * You can use PNG, GIF, JPG, BMP, CUR.
 
-To start, include the **animatedWebCursors.js** file in your page. Copy and paste the following between your page's head tag...
+To start, include the **animatedWebCursors.js** file in your page. Copy and paste the following between your page's [head tag](https://www.scaler.com/topics/html/head-tag-in-html/)...
 ```html
 <script src="animatedWebCursors.js"></script>
 ```
