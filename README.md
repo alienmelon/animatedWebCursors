@@ -6,7 +6,7 @@ This is a simple javascript file that gives you control over the browser cursor,
 
 ![Demo.gif](http://tetrageddon.com/cursors/demo.gif)
 
-This javascript file includes support for both animated and non-animated cursors. You can easily mix things up and use both!
+This [javascript](https://www.interviewbit.com/blog/top-javascript-libraries/) file includes support for both animated and non-animated cursors. You can easily mix things up and use both!
 You can set an animated (or static) cursor for the page's body, and for individual elements ([tags, divs, paragraphs, buttons, links...](https://www.w3schools.com/tags/)). This way you can fully theme the cursor for your pages!
 
 You can easily add your own animations too! Animations can be as long as you want.<br>
